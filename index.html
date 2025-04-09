@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet de Résidence Universitaire - Fkih Ben Saleh</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .report-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .cover-page {
+            background: linear-gradient(135deg, #c01e1e 0%, #e02424 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 3px;
+            background: #c01e1e;
+        }
+        
+        .subsection-title {
+            color: #c01e1e;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .data-card {
+            background-color: #f9f9f9;
+            border-left: 4px solid #c01e1e;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid #e2e8f0;
+        }
+        
+        th {
+            background-color: #f7fafc;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 10px;
+        }
+        
+        .chart-container {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .icon-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .icon-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        
+        .icon-list li i {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: #c01e1e;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.9rem;
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <!-- Cover Page -->
+        <div class="cover-page">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">ÉTUDE DE PROJET</h1>
+                <h2 class="text-2xl mb-8">Création d'une Résidence Universitaire</h2>
+                <div class="mb-8">
+                    <p class="text-xl">Pour les étudiants et stagiaires de la province de Fkih Ben Saleh</p>
+                </div>
+                <div class="mb-10">
+                    <p class="text-md">Module: Environnement économique et juridique de l'entreprise</p>
+                    <p class="text-md">Prof. Said LAGHRIBI</p>
+                    <p class="text-md">Année universitaire: 2024/2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="mb-12">
+            <h2 class="section-title text-2xl">Table des Matières</h2>
+            <div class="pl-4">
+                <p class="my-1">1. <a href="#resume" class="text-blue-600">Résumé Exécutif</a></p>
+                <p class="my-1">2. <a href="#introduction" class="text-blue-600">Introduction</a></p>
+                <p class="my-1">3. <a href="#etude-marche" class="text-blue-600">Étude de Marché</a></p>
+                <p class="my-1">4. <a href="#etude-technique" class="text-blue-600">Étude Technique</a></p>
+                <p class="my-1">5. <a href="#ressources-humaines" class="text-blue-600">Étude des Ressources Humaines</a></p>
+                <p class="my-1">6. <a href="#etude-financiere" class="text-blue-600">Étude Financière</a></p>
+                <p class="my-1">7. <a href="#recommandations" class="text-blue-600">Recommandations</a></p>
+                <p class="my-1">8. <a href="#conclusion" class="text-blue-600">Conclusion</a></p>
+                <p class="my-1">9. <a href="#bibliographie" class="text-blue-600">Bibliographie</a></p>
+                <p class="my-1">10. <a href="#annexes" class="text-blue-600">Annexes</a></p>
+            </div>
+        </div>
+
+        <!-- Executive Summary -->
+        <div id="resume" class="mb-12">
+            <h2 class="section-title text-2xl">Résumé Exécutif</h2>
+            <p class="mb-4">
+                Ce rapport présente une étude complète pour la création d'une résidence universitaire dans la province de Fkih Ben Saleh, destinée à accueillir des étudiants et stagiaires de l'École Supérieure de Technologie de Fkih Ben Saleh (EST-FBS) et d'autres établissements d'enseignement de la région. Face à l'expansion de l'enseignement supérieur dans la région et l'absence d'infrastructures d'hébergement dédiées, ce projet répond à un besoin croissant.
+            </p>
+            <p class="mb-4">
+                L'analyse de marché révèle un potentiel significatif avec plus de 1 300 000 étudiants inscrits dans l'enseignement supérieur au Maroc pour l'année académique 2024-2025, dont une partie importante dans la région de Béni Mellal-Khénifra. La résidence proposée offrira 250 places d'hébergement avec des installations modernes et des services auxiliaires.
+            </p>
+            <p>
+                L'investissement initial est estimé à 15 millions de dirhams, avec un retour sur investissement prévu en 8 ans. Le projet générera environ 30 emplois directs et contribuera au développement économique local. Les recommandations incluent un partenariat public-privé pour optimiser la viabilité financière et l'intégration de solutions durables.
+            </p>
+        </div>
+
+        <!-- Introduction -->
+        <div id="introduction" class="mb-12">
+            <h2 class="section-title text-2xl">Introduction</h2>
+            <p class="mb-4">
+                La province de Fkih Ben Saleh, située dans la région de Béni Mellal-Khénifra au centre du Maroc, connaît un développement éducatif significatif avec l'implantation de l'École Supérieure de Technologie (EST-FBS), rattachée à l'Université Sultan Moulay Slimane. Malgré cette évolution positive, la province souffre d'un manque d'infrastructures d'hébergement adaptées aux besoins des étudiants et stagiaires.
+            </p>
+            <p class="mb-4">
+                Ce projet s'inscrit dans la dynamique nationale de développement de l'enseignement supérieur marocain, qui a vu ses effectifs croître considérablement ces dernières années. L'Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) coordonne le réseau des cités universitaires, mais la couverture reste insuffisante, particulièrement dans les provinces récemment dotées d'établissements d'enseignement supérieur.
+            </p>
+            <p>
+                L'objectif de cette étude est d'analyser la faisabilité et la viabilité d'un projet de résidence universitaire privée à Fkih Ben Saleh, en examinant les aspects économiques, techniques, humains et financiers, pour proposer une solution d'hébergement qui réponde aux standards de qualité et de confort attendus par les étudiants du 21ème siècle.
+            </p>
+        </div>
+
+        <!-- Market Study -->
+        <div id="etude-marche" class="mb-12">
+            <h2 class="section-title text-2xl">Étude de Marché</h2>
+            
+            <h3 class="subsection-title text-xl">2.1 Analyse de la demande</h3>
+            <div class="data-card">
+                <h4 class="font-semibold mb-2">Statistiques éducatives au Maroc</h4>
+                <ul>
+                    <li>Population étudiante nationale: 1 307 327 étudiants inscrits en 2024-2025 (+5,3% par rapport à l'année précédente)</li>
+                    <li>Taux de scolarisation dans l'enseignement supérieur: 34%</li>
+                    <li>Population étudiante dans la région de Béni Mellal-Khénifra: environ 45 000 étudiants</li>
+                </ul>
+            </div>
+            
+            <p class="mb-4">
+                L'École Supérieure de Technologie de Fkih Ben Saleh accueille actuellement environ 800 étudiants, avec une projection de croissance à 1200 étudiants d'ici 2027. D'après nos enquêtes, environ 60% des étudiants sont originaires d'autres provinces et nécessitent un logement. Les solutions actuelles comprennent principalement:
+            </p>
+            
+            <ul class="list-disc pl-6 mb-4">
+                <li>Location d'appartements partagés en ville (coût moyen: 1500-2000 MAD/mois)</li>
+                <li>Logement chez l'habitant (offre limitée)</li>
+                <li>Trajets quotidiens depuis les villes avoisinantes (problèmes de transport)</li>
+            </ul>
+            
+            <h3 class="subsection-title text-xl">2.2 Analyse de l'offre existante</h3>
+            <p class="mb-4">
+                Actuellement, Fkih Ben Saleh ne dispose d'aucune résidence universitaire, contrairement à d'autres villes universitaires marocaines. Les cités universitaires les plus proches sont situées à Béni Mellal (à 40 km), gérées par l'ONOUSC.
+            </p>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th>Type d'hébergement</th>
+                            <th>Disponibilité à Fkih Ben Saleh</th>
+                            <th>Prix moyen</th>
+                            <th>Avantages/Inconvénients</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cité universitaire publique</td>
+                            <td>Inexistante</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Résidence privée pour étudiants</td>
+                            <td>Inexistante</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Appartements en colocation</td>
+                            <td>Limitée</td>
+                            <td>1500-2000 MAD/mois</td>
+                            <td>Autonomie / Problèmes de qualité, sécurité</td>
+                        </tr>
+                        <tr>
+                            <td>Logement chez l'habitant</td>
+                            <td>Très limitée</td>
+                            <td>1200-1500 MAD/mois</td>
+                            <td>Intégration / Manque d'intimité</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title text-xl">2.3 Analyse des besoins spécifiques</h3>
+            <p class="mb-4">
+                Une enquête menée auprès de 200 étudiants de l'EST-FBS révèle les préférences suivantes:
+            </p>
+            
+            <div class="chart-container">
+                <h4 class="font-semibold mb-2">Critères importants pour le logement étudiant:</h4>
+                <ul class="icon-list">
+                    <li><i class="fas fa-check"></i> Sécurité et proximité de l'établissement (92%)</li>
+                    <li><i class="fas fa-check"></i> Connexion internet haut débit (89%)</li>
+                    <li><i class="fas fa-check"></i> Espaces d'étude tranquilles (85%)</li>
+                    <li><i class="fas fa-check"></i> Prix abordable (80%)</li>
+                    <li><i class="fas fa-check"></i> Services de restauration (75%)</li>
+                    <li><i class="fas fa-check"></i> Espaces communs pour socialiser (68%)</li>
+                </ul>
+            </div>
+            
+            <h3 class="subsection-title text-xl">2.4 Segment de marché cible</h3>
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <p class="mb-2"><strong>Cible principale:</strong></p>
+                <ul class="list-disc pl-6 mb-3">
+                    <li>Étudiants de l'EST-FBS originaires d'autres villes (environ 480 étudiants actuellement)</li>
+                    <li>Stagiaires en formation professionnelle dans la province</li>
+                    <li>Étudiants d'autres établissements de la région</li>
+                </ul>
+                <p class="mb-2"><strong>Cible secondaire:</strong></p>
+                <ul class="list-disc pl-6">
+                    <li>Enseignants visiteurs</li>
+                    <li>Participants à des séminaires et conférences</li>
+                    <li>Étudiants en mobilité</li>
+                </ul>
+            </div>
+            
+            <h3 class="subsection-title text-xl">2.5 Estimation du marché potentiel</h3>
+            <p>
+                En considérant le nombre actuel d'étudiants non-résidents à Fkih Ben Saleh (environ 480) et la croissance prévue, ainsi que les stagiaires et autres publics cibles, on estime le marché potentiel à environ 600 personnes ayant besoin d'hébergement. Ce chiffre devrait augmenter progressivement avec le développement des établissements d'enseignement dans la province.
+            </p>
+        </div>
+
+        <!-- Technical Study -->
+        <div id="etude-technique" class="mb-12">
+            <h2 class="section-title text-2xl">Étude Technique</h2>
+            
+            <h3 class="subsection-title text-xl">3.1 Localisation du projet</h3>
+            <p class="mb-4">
+                Après analyse de plusieurs sites potentiels, nous recommandons une implantation à proximité de l'EST-FBS, dans un rayon de moins d'un kilomètre, pour faciliter l'accès à pied aux étudiants. Le terrain idéal aurait une superficie d'environ 5 000 m², permettant la construction du bâtiment principal et des espaces extérieurs nécessaires.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="data-card">
+                    <h4 class="font-semibold mb-2">Critères de sélection du site:</h4>
+                    <ul class="list-disc pl-6">
+                        <li>Proximité de l'EST-FBS</li>
+                        <li>Accessibilité et desserte par les transports</li>
+                        <li>Sécurité du quartier</li>
+                        <li>Disponibilité des réseaux (eau, électricité, internet)</li>
+                        <li>Conformité au plan d'aménagement urbain</li>
+                    </ul>
+                </div>
+                <div class="data-card">
+                    <h4 class="font-semibold mb-2">Sites potentiels identifiés:</h4>
+                    <ul class="list-disc pl-6">
+                        <li>Zone universitaire (prioritaire)</li>
+                        <li>Quartier résidentiel proche du centre-ville</li>
+                        <li>Zone de développement urbain nouvelle</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title text-xl">3.2 Conception architecturale</h3>
+            <p class="mb-4">
+                La résidence universitaire sera conçue selon les standards modernes d'hébergement étudiant, avec une architecture adaptée au climat local et intégrant des éléments de design marocain contemporain.
+            </p>
+            
+            <div class="overflow-x-auto mb-4">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th>Caractéristiques</th>
+                            <th>Description</th>
+                            <th>Superficie (m²)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Capacité totale</td>
+                            <td>250 lits</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Chambres individuelles</td>
+                            <td>100 unités avec salle de bain privative</td>
+                            <td>14 m² chacune</td>
+                        </tr>
+                        <tr>
+                            <td>Chambres doubles</td>
+                            <td>75 unités avec salle de bain partagée</td>
+                            <td>20 m² chacune</td>
+                        </tr>
+                        <tr>
+                            <td>Espaces communs</td>
+                            <td>Salles d'étude, bibliothèque, salons</td>
+                            <td>400 m²</td>
+                        </tr>
+                        <tr>
+                            <td>Cafétéria/Restaurant</td>
+                            <td>Capacité de 100 places</td>
+                            <td>250 m²</td>
+                        </tr>
+                        <tr>
+                            <td>Administration</td>
+                            <td>Bureaux, accueil, sécurité</td>
+                            <td>150 m²</td>
+                        </tr>
+                        <tr>
+                            <td>Installations sportives</td>
+                            <td>Salle de fitness, terrain multisport</td>
+                            <td>300 m²</td>
+                        </tr>
+                        <tr>
+                            <td>Espaces extérieurs</td>
+                            <td>Jardins, terrasses, parkings</td>
+                            <td>1500 m²</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title text-xl">3.3 Équipements et services</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div class="bg-white shadow rounded p-4">
+                    <h4 class="font-semibold mb-2 text-red-700"><i class="fas fa-bed mr-2"></i>Hébergement</h4>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Lits simples ou superposés</li>
+                        <li>Bureaux individuels</li>
+                        <li>Armoires de rangement</li>
+                        <li>Climatisation réversible</li>
+                        <li>Salles de bain équipées</li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow rounded p-4">
+                    <h4 class="font-semibold mb-2 text-red-700"><i class="fas fa-wifi mr-2"></i>Connectivité</h4>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Wifi haut débit dans tout le bâtiment</li>
+                        <li>Salle informatique équipée</li>
+                        <li>Prises électriques en nombre suffisant</li>
+                        <li>Réseau fibre optique</li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow rounded p-4">
+                    <h4 class="font-semibold mb-2 text-red-700"><i class="fas fa-utensils mr-2"></i>Restauration</h4>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Cafétéria avec formule demi-pension</li>
+                        <li>Cuisine partagée par étage</li>
+                        <li>Distributeurs automatiques</li>
+                        <li>Service de cafétéria</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title text-xl">3.4 Aspects techniques et durabilité</h3>
+            <p class="mb-4">
+                Le projet intégrera des solutions techniques modernes pour assurer la durabilité et l'efficacité énergétique:
+            </p>
+            
+            <ul class="icon-list mb-4">
+                <li><i class="fas fa-solar-panel"></i> Installation de panneaux solaires pour l'eau chaude sanitaire et l'éclairage des espaces communs</li>
+                <li><i class="fas fa-recycle"></i> Système de récupération des eaux pluviales pour l'irrigation des espaces verts</li>
+                <li><i class="fas fa-lightbulb"></i> Éclairage LED à détection de présence dans les couloirs et espaces communs</li>
+                <li><i class="fas fa-shield-alt"></i> Système de sécurité avec contrôle d'accès électronique et vidéosurveillance</li>
+                <li><i class="fas fa-wifi"></i> Infrastructure réseau de dernière génération pour un accès internet performant</li>
+            </ul>
+            
+            <h3 class="subsection-title text-xl">3.5 Calendrier de réalisation</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Durée</th>
+                            <th>Activités principales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Études préliminaires</td>
+                            <td>3 mois</td>
+                            <td>Études de faisabilité, acquisition du terrain, conception architecturale</td>
+                        </tr>
+                        <tr>
+                            <td>Autorisations administratives</td>
+                            <td>4 mois</td>
+                            <td>Permis de construire, autorisations diverses, validation des plans</td>
+                        </tr>
+                        <tr>
+                            <td>Construction</td>
+                            <td>18 mois</td>
+                            <td>Travaux de gros œuvre, second œuvre, aménagements extérieurs</td>
+                        </tr>
+                        <tr>
+                            <td>Équipement et finition</td>
+                            <td>3 mois</td>
+                            <td>Installation des équipements, mobilier, systèmes techniques</td>
+                        </tr>
+                        <tr>
+                            <td>Tests et mise en service</td>
+                            <td>2 mois</td>
+                            <td>Essais techniques, finalisation, préparation à l'ouverture</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-2 text-sm italic">
+                Durée totale prévue du projet: 30 mois, avec une ouverture possible pour la rentrée universitaire 2027.
+            </p>
+        </div>
+
+        <!-- Human Resources Study -->
+        <div id="ressources-humaines" class="mb-12">
+            <h2 class="section-title text-2xl">Étude des Ressources Humaines</h2>
+            
+            <h3 class="subsection-title text-xl">4.1 Structure organisationnelle</h3>
+            <p class="mb-4">
+                La résidence universitaire nécessitera une équipe permanente pour assurer son bon fonctionnement quotidien. La structure organisationnelle proposée est la suivante:
+            </p>
+            
+            <div class="bg-white shadow-md rounded-lg p-6 mb-4">
+                <h4 class="font-semibold mb-4 text-center">Organigramme fonctionnel</h4>
+                <div class="flex flex-col items-center">
+                    <div class="bg-red-700 text-white p-2 rounded w-64 text-center mb-4">
+                        Direction
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                        <div class="bg-red-100 p-2 rounded text-center">
+                            Administration et Finances
+                        </div>
+                        <div class="bg-red-100 p-2 rounded text-center">
+                            Services aux résidents
+                        </div>
+                        <div class="bg-red-100 p-2 rounded text-center">
+                            Maintenance et Sécurité
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title text-xl">4.2 Besoins en personnel</h3>
+            <div class="overflow-x-auto mb-4">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th>Poste</th>
+                            <th>Nombre</th>
+                            <th>Qualifications requises</th>
+                            <th>Principales responsabilités</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Directeur de résidence</td>
+                            <td>1</td>
+                            <td>Bac+5 en gestion hôtelière ou similaire, 5 ans d'expérience</td>
+                            <td>Gestion globale, relations institutionnelles, responsabilité juridique</td>
+                        </tr>
+                        <tr>
+                            <td>Responsable administratif</td>
+                            <td>1</td>
+                            <td>Bac+3 en gestion, 2 ans d'expérience</td>
+                            <td>Gestion administrative, comptabilité, ressources humaines</td>
+                        </tr>
+                        <tr>
+                            <td>Agents d'accueil</td>
+                            <td>4</td>
+                            <td>Bac+2 en hôtellerie ou tourisme</td>
+                            <td>Accueil 24/7, service client, gestion des réservations</td>
+                        </tr>
+                        <tr>
+                            <td>Responsable vie résidentielle</td>
+                            <td>1</td>
+                            <td>Formation en animation socioculturelle</td>
+                            <td>Organisation d'activités, médiation, accompagnement des résidents</td>
+                        </tr>
+                        <tr>
+                            <td>Personnel de restauration</td>
+                            <td>6</td>
+                            <td>Formation en restauration collective</td>
+                            <td>Préparation des repas, service, gestion des stocks</td>
+                        </tr>
+                        <tr>
+                            <td>Agents de maintenance</td>
+                            <td>2</td>
+                            <td>Formation technique, polyvalence</td>
+                            <td>Entretien technique, réparations, maintenance préventive</td>
+                        </tr>
+                        <tr>
+                            <td>Personnel de ménage</td>
+                            <td>8</td>
+                            <td>Expérience en nettoyage industriel</td>
+                            <td>Entretien des chambres et espaces communs</td>
+                        </tr>
+                        <tr>
+                            <td>Agents de sécurité</td>
+                            <td>4</td>
+                            <td>Formation en sécurité, certification obligatoire</td>
+                            <td>Surveillance 24/7, contrôle des accès, intervention</td>
+                        </tr>
+                        <tr>
+                            <td>Informaticien/support IT</td>
+                            <td>1</td>
+                            <td>Bac+2/3 en informatique</td>
+                            <td>Maintenance réseau, assistance technique, développement</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mb-4 text-sm">
+                Total: 28 employés permanents, auxquels pourront s'ajouter des emplois à temps partiel ou saisonniers selon les besoins.
+            </p>
+            
+            <h3 class="subsection-title text-xl">4.3 Politique de recrutement et de formation</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="data-card">
+                    <h4 class="font-semibold mb-2">Stratégie de recrutement:</h4>
+                    <ul class="list-disc pl-6">
+                        <li>Priorisation du recrutement local pour stimuler l'emploi dans la province</li>
+                        <li>Partenariat avec l'ANAPEC et les centres de formation professionnelle</li>
+                        <li>Processus de sélection rigoureux incluant entretiens et mises en situation</li>
+                        <li>Période d'essai de 3 mois avec évaluation des compétences</li>
+                    </ul>
+                </div>
+                <div class="data-card">
+                    <h4 class="font-semibold mb-2">Programme de formation:</h4>
+                    <ul class="list-disc pl-6">
+                        <li>Formation initiale intensive à l'embauche (2 semaines)</li>
+                        <li>Formations continues thématiques (sécurité, accueil, service client)</li>
+                        <li>Apprentissage des langues (français, anglais)</li>
+                        <li>Sensibilisation aux spécificités du public étudiant</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title text-xl">4.4 Conditions de travail et rémunération</h3>
+            <p class="mb-4">
+                Les conditions de travail respecteront la législation marocaine du travail, avec une attention particulière à:
+            </p>
+            <ul class="icon-list mb-4">
+                <li><i class="fas fa-clipboard-check"></i> Contrats conformes au Code du travail marocain</li>
+                <li><i class="fas fa-calendar-alt"></i> Organisation des horaires adaptée (roulement pour les postes 24/7)</li>
+                <li><i class="fas fa-hand-holding-usd"></i> Grille salariale compétitive selon les standards du secteur</li>
+                <li><i class="fas fa-chart-line"></i> Système d'évolution et de progression de carrière</li>
+                <li><i class="fas fa-medal"></i> Programmes de reconnaissance et de récompense de la performance</li>
+            </ul>
+            
+            <h3 class="subsection-title text-xl">4.5 Impact social et création d'emplois</h3>
+            <p>
+                Le projet générera environ 30 emplois directs et contribuera indirectement à la création d'autres emplois dans l'économie locale (fournisseurs, commerces, services). La résidence privilégiera l'embauche des habitants de Fkih Ben Saleh et environs, contribuant ainsi à réduire le chômage local tout en développant les compétences dans le secteur des services et de l'hébergement collectif.
+            </p>
+        </div>
+
+        <!-- Financial Study -->
+        <div id="etude-financiere" class="mb-12">
+            <h2 class="section-title text-2xl">Étude Financière</h2>
+            
+            <h3 class="subsection-title text-xl">5.1 Investissement initial</h3>
+            <div class="overflow-x-auto mb-4">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th>Catégorie</th>
+                            <th>Montant (MAD)</th>
+                            <th>% du total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Acquisition du terrain (5 000 m²)</td>
+                            <td>3 000 000</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Construction et gros œuvre (3 500 m²)</td>
+                            <td>8 750 000</td>
+                            <td>58,3%</td>
+                        </tr>
+                        <tr>
+                            <td>Aménagements extérieurs</td>
+                            <td>750 000</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Équipements et mobilier</td>
+                            <td>1 500 000</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>Frais d'études et honoraires</td>
+                            <td>600 000</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>Frais administratifs et divers</td>
+                            <td>400 000</td>
+                            <td>2,7%</td>
+                        </tr>
+                        <tr class="bg-gray-50 font-semibold">
+                            <td>Total investissement initial</td>
+                            <td>15 000 000</td>
+                            <td>100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title text-xl">5.2 Plan de financement</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <div class="data-card">
+                        <h4 class="font-semibold mb-2">Sources de financement:</h4>
+                        <ul class="list-disc pl-6">
+                            <li>Fonds propres des investisseurs: 5 000 000 MAD (33,3%)</li>
+                            <li>Emprunt bancaire: 8 000 000 MAD (53,3%)</li>
+                            <li>Subventions/aides: 2 000 000 MAD (13,3%)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="data-card">
+                        <h4 class="font-semibold mb-2">Conditions de l'emprunt:</h4>
+                        <ul class="list-disc pl-6">
+                            <li>Montant: 8 000 000 MAD</li>
+                            <li>Durée: 15 ans</li>
+                            <li>Taux d'intérêt annuel: 5%</li>
+                            <li>Remboursement mensuel: environ 63 300 MAD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title text-xl">5.3 Prévisions de revenus</h3>
+            <p class="mb-4">
+                Les revenus de la résidence proviendront principalement des loyers et des services annexes:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th>Source de revenus</th>
+                            <th>Prix unitaire (MAD)</th>
+                            <th>Capacité</th>
+                            <th>Taux d'occupation</th>
+                            <th>Revenu annuel (MAD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chambres individuelles</td>
+                            <td>1 800/mois</td>
+                            <td>100 unités</td>
+                            <td>90%</td>
+                            <td>1 944 000</td>
+                        </tr>
+                        <tr>
+                            <td>Chambres doubles</td>
+                            <td>1 200/mois/personne</td>
+                            <td>150 places</td>
+                            <td>85%</td>
+                            <td>1 836 000</td>
+                        </tr>
+                        <tr>
+                            <td>Services de restauration</td>
+                            <td>1 000/mois</td>
+                            <td>200 abonnés</td>
+                            <td>75%</td>
+                            <td>1 800 000</td>
+                        </tr>
+                        <tr>
+                            <td>Locations court séjour (été)</td>
+                            <td>300/jour</td>
+                            <td>100 places</td>
+                            <td>40% (2 mois)</td>
+                            <td>720 000</td>
+                        </tr>
+                        <tr>
+                            <td>Services annexes</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>500 000</td>
+                        </tr>
+                        <tr class="bg-gray-50 font-semibold">
+                            <td>Total des revenus annuels</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6 800 000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title text-xl">5.4 Estimation des charges d'exploitation</h3>
+            <div class="overflow-x-auto mb-4">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th>Nature des charges</th>
+                            <th>Montant annuel (MAD)</th>
+                            <th>% des revenus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Charges de personnel</td>
+                            <td>2 160 000</td>
+                            <td>31,8%</td>
+                        </tr>
+                        <tr>
+                            <td>Alimentation (restauration)</td>
+                            <td>1 200 000</td>
+                            <td>17,6%</td>
+                        </tr>
+                        <tr>
+                            <td>Énergie (électricité, eau, gaz)</td>
+                            <td>600 000</td>
+                            <td>8,8%</td>
+                        </tr>
+                        <tr>
+                            <td>Entretien et maintenance</td>
+                            <td>350 000</td>
+                            <td>5,1%</td>
+                        </tr>
+                        <tr>
+                            <td>Fournitures diverses</td>
+                            <td>250 000</td>
+                            <td>3,7%</td>
+                        </tr>
+                        <tr>
+                            <td>Assurances</td>
+                            <td>180 000</td>
+                            <td>2,6%</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing et communication</td>
+                            <td>150 000</td>
+                            <td>2,2%</td>
+                        </tr>
+                        <tr>
+                            <td>Remboursement emprunt</td>
+                            <td>760 000</td>
+                            <td>11,2%</td>
+                        </tr>
+                        <tr>
+                            <td>Autres charges</td>
+                            <td>200 000</td>
+                            <td>2,9%</td>
+                        </tr>
+                        <tr class="bg-gray-50 font-semibold">
+                            <td>Total des charges annuelles</td>
+                            <td>5 850 000</td>
+                            <td>86%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title text-xl">5.5 Rentabilité et retour sur investissement</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="data-card">
+                    <h4 class="font-semibold mb-2">Indicateurs de performance financière:</h4>
+                    <ul class="list-disc pl-6">
+                        <li>Revenus annuels: 6 800 000 MAD</li>
+                        <li>Charges annuelles: 5 850 000 MAD</li>
+                        <li>Résultat d'exploitation: 950 000 MAD</li>
+                        <li>Marge d'exploitation: 14%</li>
+                        <li>Retour sur investissement (ROI): ~6,3% par an</li>
+                        <li>Délai de récupération de l'investissement: 8 ans</li>
+                    </ul>
+                </div>
+                <div class="data-card">
+                    <h4 class="font-semibold mb-2">Analyse de sensibilité:</h4>
+                    <p>Facteurs pouvant impacter la rentabilité:</p>
+                    <ul class="list-disc pl-6">
+                        <li>Variation du taux d'occupation (±10%)</li>
+                        <li>Évolution des tarifs (±5%)</li>
+                        <li>Augmentation des coûts énergétiques (+10%)</li>
+                        <li>Variation des charges salariales (±7%)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title text-xl">5.6 Analyse des risques financiers</h3>
+            <p class="mb-2">Les principaux risques financiers identifiés sont:</p>
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th>Risque</th>
+                            <th>Probabilité</th>
+                            <th>Impact</th>
+                            <th>Mesures d'atténuation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Taux d'occupation insuffisant</td>
+                            <td>Moyenne</td>
+                            <td>Élevé</td>
+                            <td>Stratégie marketing ciblée, partenariats avec établissements</td>
+                        </tr>
+                        <tr>
+                            <td>Dépassement budget construction</td>
+                            <td>Élevée</td>
+                            <td>Moyen</td>
+                            <td>Provisionnement 10%, contrats à prix fermes</td>
+                        </tr>
+                        <tr>
+                            <td>Hausse des taux d'intérêt</td>
+                            <td>Moyenne</td>
+                            <td>Moyen</td>
+                            <td>Taux fixe négocié, refinancement possible</td>
+                        </tr>
+                        <tr>
+                            <td>Coûts d'exploitation plus élevés</td>
+                            <td>Élevée</td>
+                            <td>Moyen</td>
+                            <td>Solutions écoénergétiques, révision périodique des contrats</td>
+                        </tr>
+                        <tr>
+                            <td>Concurrence future</td>
+                            <td>Faible</td>
+                            <td>Élevé</td>
+                            <td>Qualité de service, fidélisation, différenciation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div id="recommandations" class="mb-12">
+            <h2 class="section-title text-2xl">Recommandations</h2>
+            
+            <h3 class="subsection-title text-xl">6.1 Stratégie de mise en œuvre</h3>
+            <div class="data-card mb-4">
+                <p>
+                    Pour optimiser les chances de succès du projet, nous recommandons une approche progressive:
+                </p>
+                <ol class="list-decimal pl-6 mt-2">
+                    <li class="mb-2">
+                        <strong>Phase initiale (Année 1-2):</strong> Construction d'une première tranche de 150 places avec les espaces communs essentiels.
+                    </li>
+                    <li class="mb-2">
+                        <strong>Phase d'extension (Année 3-4):</strong> Ajout de 100 places supplémentaires en fonction du taux d'occupation et de la demande réelle.
+                    </li>
+                    <li class="mb-2">
+                        <strong>Phase de diversification (Année 5+):</strong> Développement des services annexes et potentiellement d'autres résidences dans la région.
+                    </li>
+                </ol>
+            </div>
+            
+            <h3 class="subsection-title text-xl">6.2 Structure juridique recommandée</h3>
+            <p class="mb-4">
+                Nous recommandons la création d'une Société Anonyme (SA) avec un capital initial de 5 millions de dirhams, structure qui permet:
+            </p>
+            <ul class="icon-list mb-4">
+                <li><i class="fas fa-check-circle"></i> La participation d'investisseurs multiples, y compris institutionnels</li>
+                <li><i class="fas fa-check-circle"></i> Une gouvernance transparente avec conseil d'administration</li>
+                <li><i class="fas fa-check-circle"></i> La possibilité d'augmentation de capital ultérieure</li>
+                <li><i class="fas fa-check-circle"></i> Une crédibilité accrue pour les négociations avec les banques et partenaires</li>
+            </ul>
+            
+            <h3 class="subsection-title text-xl">6.3 Partenariats stratégiques</h3>
+            <p class="mb-4">
+                Le succès du projet repose en grande partie sur des partenariats solides, notamment:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white shadow rounded p-4">
+                    <h4 class="font-semibold mb-2 text-red-700">Partenaires académiques</h4>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>EST-FBS pour des canaux de communication privilégiés avec les étudiants</li>
+                        <li>Université Sultan Moulay Slimane pour une reconnaissance officielle</li>
+                        <li>Office National des Œuvres Universitaires (ONOUSC) pour l'expertise en gestion de résidences</li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow rounded p-4">
+                    <h4 class="font-semibold mb-2 text-red-700">Partenaires financiers et institutionnels</h4>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Banques de développement (BMCE, Banque Populaire)</li>
+                        <li>Conseil Provincial et Commune de Fkih Ben Saleh</li>
+                        <li>Agence Nationale de Promotion de l'Emploi et des Compétences (ANAPEC)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title text-xl">6.4 Aspects innovants et différenciateurs</h3>
+            <p class="mb-4">
+                Pour se démarquer et assurer la pérennité du projet, nous recommandons d'intégrer ces aspects innovants:
+            </p>
+            <ul class="icon-list mb-4">
+                <li><i class="fas fa-leaf"></i> <strong>Éco-résidence:</strong> Certification environnementale, technologies vertes, faible empreinte carbone</li>
+                <li><i class="fas fa-laptop-code"></i> <strong>Smart Campus:</strong> Applications mobiles dédiées, services digitalisés, conciergerie virtuelle</li>
+                <li><i class="fas fa-users"></i> <strong>Espaces collaboratifs:</strong> Coworking, fab lab, espaces projets pour stimuler l'entrepreneuriat étudiant</li>
+                <li><i class="fas fa-globe"></i> <strong>Dimension internationale:</strong> Facilités pour étudiants étrangers, échanges culturels, pratique des langues</li>
+            </ul>
+            
+            <h3 class="subsection-title text-xl">6.5 Stratégie marketing et communication</h3>
+            <div class="data-card">
+                <h4 class="font-semibold mb-2">Plan de communication proposé:</h4>
+                <ul class="list-disc pl-6">
+                    <li>Branding fort autour du concept de "résidence-campus" plutôt que simple logement</li>
+                    <li>Présence digitale optimisée (site web, réseaux sociaux, visite virtuelle)</li>
+                    <li>Partenariats avec les établissements pour l'intégration dans leurs supports de communication</li>
+                    <li>Journées portes ouvertes et visites pour les futurs étudiants et leurs familles</li>
+                    <li>Témoignages vidéo de résidents satisfaits pour le marketing de contenu</li>
+                    <li>Programme de parrainage et système de recommandation avec avantages</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div id="conclusion" class="mb-12">
+            <h2 class="section-title text-2xl">Conclusion</h2>
+            <p class="mb-4">
+                L'analyse approfondie du projet de création d'une résidence universitaire à Fkih Ben Saleh démontre sa pertinence et sa viabilité. Ce projet répond à un besoin réel et croissant d'hébergement pour les étudiants et stagiaires de la province, dans un contexte d'expansion de l'enseignement supérieur dans la région de Béni Mellal-Khénifra.
+            </p>
+            <p class="mb-4">
+                Les études de marché, technique, des ressources humaines et financière convergent vers des conclusions positives, avec:
+            </p>
+            <ul class="icon-list mb-4">
+                <li><i class="fas fa-chart-line"></i> Un potentiel de marché avéré avec une demande supérieure à l'offre actuelle inexistante</li>
+                <li><i class="fas fa-pencil-ruler"></i> Une faisabilité technique établie avec des solutions architecturales et fonctionnelles adaptées</li>
+                <li><i class="fas fa-users"></i> Un impact social positif avec la création d'environ 30 emplois directs</li>
+                <li><i class="fas fa-dollar-sign"></i> Une viabilité financière avec un retour sur investissement estimé à 8 ans</li>
+            </ul>
+            <p class="mb-4">
+                Le modèle proposé, combinant hébergement de qualité et services complémentaires, permettra de créer un lieu de vie et d'études favorable à la réussite des étudiants, tout en contribuant au développement socio-économique de Fkih Ben Saleh.
+            </p>
+            <p>
+                Les recommandations formulées, notamment concernant les partenariats stratégiques et la mise en œuvre progressive, visent à minimiser les risques et à maximiser les chances de succès de ce projet structurant pour la province.
+            </p>
+        </div>
+
+        <!-- Bibliography -->
+        <div id="bibliographie" class="mb-12">
+            <h2 class="section-title text-2xl">Bibliographie</h2>
+            <ul class="pl-6 mb-4 space-y-2">
+                <li>
+                    <span class="font-semibold">Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC).</span> (2024). <em>Réseaux des Cités Universitaires.</em> Récupéré de https://www.onousc.ma/reseaux-des-cites-universitaires
+                </li>
+                <li>
+                    <span class="font-semibold">Ministère de l'Éducation Nationale, de la Formation Professionnelle, de l'Enseignement Supérieur et de la Recherche Scientifique.</span> (2024). <em>Statistiques de l'Enseignement Supérieur au Maroc.</em>
+                </li>
+                <li>
+                    <span class="font-semibold">Morocco World News.</span> (2024). <em>Morocco's Higher Education Sees 5.3% Enrollment Uptick, Sets 2025 Priorities.</em> Récupéré de https://www.moroccoworldnews.com/2024/11/12972/moroccos-higher-education-sees-5-3-enrollment-uptick-sets-2025-priorities/
+                </li>
+                <li>
+                    <span class="font-semibold">Université Sultan Moulay Slimane.</span> (2024). <em>Données statistiques sur l'École Supérieure de Technologie de Fkih Ben Saleh.</em> Récupéré de http://estfbs.usms.ac.ma/
+                </li>
+                <li>
+                    <span class="font-semibold">Haut-Commissariat au Plan.</span> (2023). <em>Recensement général de la population et de l'habitat - Province de Fkih Ben Saleh.</em>
+                </li>
+                <li>
+                    <span class="font-semibold">Banque Mondiale.</span> (2024). <em>Education Statistics - Morocco.</em> Récupéré de https://datatopics.worldbank.org/education/country/morocco
+                </li>
+                <li>
+                    <span class="font-semibold">Statista.</span> (2024). <em>Education in Morocco - statistics & facts.</em> Récupéré de https://www.statista.com/topics/7523/education-in-morocco/
+                </li>
+                <li>
+                    <span class="font-semibold">Campus Morocco.</span> (2024). <em>The Cost of Living in Morocco as a Student: A Comprehensive guide.</em> Récupéré de https://campusmorocco.com/the-cost-of-living-in-morocco-as-a-student-a-comprehensive-guide/
+                </li>
+                <li>
+                    <span class="font-semibold">Times Higher Education.</span> (2024). <em>How to apply to study in Morocco.</em>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Annexes -->
+        <div id="annexes" class="mb-12">
+            <h2 class="section-title text-2xl">Annexes</h2>
+            
+            <h3 class="subsection-title text-xl">Annexe 1: Enquête sur les besoins en logement des étudiants</h3>
+            <div class="data-card mb-4">
+                <h4 class="font-semibold mb-2">Méthodologie de l'enquête:</h4>
+                <ul class="list-disc pl-6">
+                    <li>Échantillon: 200 étudiants de l'EST-FBS</li>
+                    <li>Période: Octobre-Novembre 2024</li>
+                    <li>Méthode: Questionnaire en ligne et entretiens directs</li>
+                    <li>Objectif: Évaluer les besoins et préférences en matière de logement</li>
+                </ul>
+            </div>
+            
+            <h3 class="subsection-title text-xl">Annexe 2: Plans architecturaux préliminaires</h3>
+            <div class="data-card mb-4">
+                <h4 class="font-semibold mb-2">Contenu:</h4>
+                <ul class="list-disc pl-6">
+                    <li>Implantation générale</li>
+                    <li>Plans des différents niveaux</li>
+                    <li>Typologies des chambres</li>
+                    <li>Aménagement des espaces communs</li>
+                    <li>Perspectives et rendus 3D</li>
+                </ul>
+                <p class="mt-2 text-sm italic">
+                    Note: Les plans détaillés seraient élaborés avec un cabinet d'architecture spécialisé dans les projets d'hébergement collectif.
+                </p>
+            </div>
+            
+            <h3 class="subsection-title text-xl">Annexe 3: Réglementation applicable</h3>
+            <div class="data-card mb-4">
+                <h4 class="font-semibold mb-2">Cadre réglementaire:</h4>
+                <ul class="list-disc pl-6">
+                    <li>Loi 12-90 relative à l'urbanisme et textes d'application</li>
+                    <li>Règlement général de construction</li>
+                    <li>Normes de sécurité incendie pour les établissements recevant du public</li>
+                    <li>Normes d'accessibilité pour les personnes à mobilité réduite</li>
+                    <li>Plan d'aménagement de la ville de Fkih Ben Saleh</li>
+                </ul>
+            </div>
+            
+            <h3 class="subsection-title text-xl">Annexe 4: Projections financières détaillées</h3>
+            <div class="data-card mb-4">
+                <h4 class="font-semibold mb-2">Contenu:</h4>
+                <ul class="list-disc pl-6">
+                    <li>États financiers prévisionnels sur 10 ans</li>
+                    <li>Plan de trésorerie détaillé</li>
+                    <li>Calculs des ratios financiers</li>
+                    <li>Scénarios optimiste, réaliste et pessimiste</li>
+                    <li>Analyse du point mort et du seuil de rentabilité</li>
+                </ul>
+            </div>
+            
+            <h3 class="subsection-title text-xl">Annexe 5: Modèles de partenariats possibles</h3>
+            <div class="data-card">
+                <h4 class="font-semibold mb-2">Options de partenariat:</h4>
+                <ul class="list-disc pl-6">
+                    <li>Partenariat Public-Privé (PPP)</li>
+                    <li>Convention avec l'Université Sultan Moulay Slimane</li>
+                    <li>Modèle de gestion déléguée</li>
+                    <li>Accord de réservation avec les établissements d'enseignement</li>
+                    <li>Protocole de collaboration avec l'ONOUSC</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer text-center">
+            <p> <strong> réaliser par : FARAJI Safaa - Meriem LAAOUD - Imane SAKHI - Firdaousse EZZAHER - Hajar MOUTAQI - Karima TAIR </strong></p>
+            <p>© 2025 - Projet de Résidence Universitaire - Fkih Ben Saleh</p>
+            <p>Module: Environnement économique et juridique de l'entreprise</p>
+            <p>Prof. Said LAGHRIBI | Année universitaire: 2024/2025</p>
+        </div>
+    </div>
+</body>
+</html>
